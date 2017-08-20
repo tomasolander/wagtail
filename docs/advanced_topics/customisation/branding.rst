@@ -56,6 +56,15 @@ To replace the login message, create a template file ``dashboard/templates/wagta
 
     {% block branding_login %}Sign in to Frank's Site{% endblock %}
 
+``branding_login_text``
+------------------------
+
+To add additional text to the login page, create a template file ``dashboard/templates/wagtailadmin/login.html`` that overrides the block ``branding_login_text``::
+
+    {% extends "wagtailadmin/login.html" %}
+
+    {% block branding_login_text %}If you fail to log in or if you have any questions, please email support.{% endblock %}
+
 ``branding_welcome``
 --------------------
 
